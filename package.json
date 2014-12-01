@@ -1,0 +1,26 @@
+{
+  "name": "dispatcher",
+  "version": "1.0.0",
+  "description": "basic reuasable flux dispatcher",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/orodio/dispatcher"
+  },
+  "keywords": [
+    "dispatcher"
+  ],
+  "author": "orodio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orodio/dispatcher/issues"
+  },
+  "homepage": "https://github.com/orodio/dispatcher",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "object-assign": "^2.0.0"
+  }
+}
