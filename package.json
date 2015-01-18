@@ -1,6 +1,6 @@
 {
   "name": "oro-dispatcher",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "basic reuasable flux dispatcher",
   "main": "index.js",
   "scripts": {
