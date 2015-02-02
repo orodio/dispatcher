@@ -1,6 +1,6 @@
 "use strict";
 
-export default function(state, stores) {
+export default function(state, ...stores) {
   if (stores[0].length) stores = stores[0];
 
   return {
