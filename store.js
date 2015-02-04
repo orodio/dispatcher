@@ -26,7 +26,7 @@ export default function(NS, exp, dispCb, update, ...subs) {
     unsubscribe(fn) { this.removeListener(NS, fn); }
   }, EventEmitter.prototype, exp);
 
-  if (dispCb) store["token"] = Dispatcher.register(dispCb.bind(_store));
+  if (dispCb) _store["token"] = Dispatcher.register(dispCb.bind(_store));
   if (update) subs.forEach(sub => sub.subscribe(update.bind(_store)));
 
   return store;
