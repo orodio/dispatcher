@@ -29,7 +29,7 @@ export default function(NS, exp, dispCb, update, ...subs) {
   if (dispCb) _store["token"] = Dispatcher.register(dispCb.bind(_store));
   if (update) subs.forEach(sub => sub.subscribe(update.bind(_store)));
 
-  return store;
+  return _store;
 };
 
 /** # The basic use of store...
