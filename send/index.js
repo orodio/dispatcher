@@ -1,6 +1,4 @@
-"use strict";
-
-import Dispatcher from "./index";
+import Dispatcher from "../index";
 import assign     from "object-assign";
 
 export default function(actionType, data={}, source="VIEW_ACTION") {
