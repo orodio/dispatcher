@@ -16,7 +16,7 @@ Projection.prototype = assign({}, EventEmitter.prototype, {
     let _this = this;
     Dispatcher.register(function(payload) {
       if (payload.action.actionType !== NS) return;
-      if (fn && typeof fn === "function") fn(payload, payload.action);
+      if (fn && typeof fn === "function") fn(payload.action, payload);
       _this.broadcast();
     });
   },
