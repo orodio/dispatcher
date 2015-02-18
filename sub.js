@@ -1,5 +1,5 @@
 import subscribe from "./subscribe";
 
-console.error("oro-dispatcher/sub is depricated please use oro-dispatcher/subscribe instead");
+console.error("You should use oro-dispatcher/subscribe instead of oro-dispatcher/sub");
 
 export default subscribe;
