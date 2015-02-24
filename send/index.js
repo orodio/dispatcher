@@ -1,9 +1,17 @@
-import Dispatcher from "../index";
-import assign     from "object-assign";
+import dispatch from "../dispatch";
 
-export default function(actionType, data={}, source="VIEW_ACTION") {
-  Dispatcher.dispatch({
-    source, action: assign({actionType}, data)
-  });
+function idFn(n) { return n; }
+
+function isArray(n) {
+  return Object.prototype.toString.call(n) === Object.prototype.toString.call([]);
 }
 
+export default function(actionType, xForm=idFn, source) {
+  return function(res={}) {
+    let response = isArray(res)
+      ? {collection: xForm(res)}
+      : xForm(res);
+
+    dispatch(actionType, response, source);
+  }
+}
