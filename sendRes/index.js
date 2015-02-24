@@ -1,4 +1,4 @@
-import send from "../send";
+import dispatch from "../dispatch";
 
 function idFn(n) { return n; }
 
@@ -12,6 +12,6 @@ export default function(actionType, xForm=idFn, source) {
       ? {collection: xForm(res)}
       : xForm(res);
 
-    send(actionType, response, source);
+    dispatch(actionType, response, source);
   }
 }
