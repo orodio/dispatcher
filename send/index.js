@@ -12,6 +12,6 @@ export default function(actionType, xForm=idFn, source) {
       ? {collection: xForm(res)}
       : xForm(res);
 
-    dispatch(actionType, response, source);
+    return dispatch(actionType, response, source);
   }
 }
