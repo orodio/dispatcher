@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/orodio/dispatcher",
   "dependencies": {
+    "es6-promise": "^2.0.1",
     "flux": "^2.0.1",
     "object-assign": "^2.0.0"
   }
